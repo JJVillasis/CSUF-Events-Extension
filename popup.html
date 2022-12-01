@@ -20,14 +20,9 @@
 <head>
     <link rel = "stylesheet" href = "style.css" />
     <title>Chrome Extension</title>
-    <body style="background-color:rgb(14, 58, 116);">
-     </body>
-
-     <script>
-        let prev = localStorage.getItem('clickState') || 'default';
-        document.documentElement.setAttribute('data-theme', prev);
-        checkbox.checked = prev === 'selected';
-    </script>
+    <body>
+      <script src="setTheme.js"></script>
+    </body>
 </head>
 
 <body background="/images/tuffytemp.png">
@@ -53,20 +48,7 @@
     <div class="btn-group" style="width:100%"></div>
     <div class = "center">
     <button id="btn">Change Theme</button>
-    <script src="themes.js">
-    </script>
-    <script>
-        btn();
-        
-        function btn() {
-          if (localStorage.clickState) {
-            localStorage.clickState = Number(localStorage.clickcount)+1;
-          } else {
-            localStorage.clickcount = 1;
-          }
-          document.getElementById("btn").innerHTML = localStorage.clickState;
-        }
-        </script>
+    <script src="themes.js"></script>
   </body>
 
 <body>
@@ -75,8 +57,8 @@
     <script src = "aboutscreen.js"></script>
 </div>
 </body>
-  <script src="themes.js">
-  </script>
+  <!-- <script src="themes.js">
+  </script> -->
   <div id="foobar" style="background: none"></div>
 </body>
     
