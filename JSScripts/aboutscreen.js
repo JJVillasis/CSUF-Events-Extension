@@ -18,7 +18,12 @@ let aboutInfo = document.getElementById("aboutInfo");
 
 aboutInfo.addEventListener("click", () => {
   alert(
-    "CPSC 254 Semester Project\nVersion 1.00\nMade by Sami Bajwa, Patrick Lin, and Nicholas Jones\nThis extension allows you to view previous and upcoming CSUF\
-    events all on one calendar, without needing to go to the official website."
+    "=========================\n" +
+    "        CPSC 254 Semester Project\n" +
+    "=========================\n" +
+    " - Version 1.00\n" + 
+    " - Made by: Sami Bajwa, Patrick Lin, and Nicholas Jones\n\n" + 
+    "This extension allows you to view previous and upcoming CSUF " +
+    "events all on one calendar, without needing to go to the official website."
   );
 });
