@@ -16,7 +16,6 @@
 
 const themeBtn = document.getElementById("btn");
 var clickState = localStorage.getItem("clickState");
-console.log("Saved Click State = " + clickState);
 
 themeBtn.addEventListener("click", function onClick(event) {
   clickState++;

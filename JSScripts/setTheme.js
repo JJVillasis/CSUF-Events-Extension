@@ -1,5 +1,5 @@
 var prevState = parseInt(localStorage.getItem("clickState"));
-console.log(typeof localStorage.getItem("clickState"));
+console.log("Saved Click State = " + prevState);
 
 switch(prevState) {
     case 1:
@@ -21,7 +21,6 @@ switch(prevState) {
         document.body.style.backgroundColor = "rgb(80, 20, 122)";
         break;
     default:
-        console.log("Here")
         document.body.style.backgroundColor = "rgb(14, 58, 116)";
         break;
 }
